@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.nil{
+  font-size: larger;
+  font-weight: 400;
+}
+
+ 
+.App-header {
+  background-color: #2211DD;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.imgrdr{
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;  
+  border-radius: 8px;
+  margin-top: 1%;
+  margin-right: 10%;
+  border-radius: 10%;
+  image-rendering: auto;
+  float: right;
+  overflow: hidden;
+  }
+
+.img-container{
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;  
+   border-radius: 8px;;
+}
+   
+.imgrdr2{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;  
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-right: 1%;  
+    image-rendering: auto;
+    float: right;
+    overflow: hidden;
+    
+  }
+  
+  
+.img-container2
+  {  position: absolute;
+     margin-left: 700px;
+     margin-top: 030px; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;  
+     border-radius: 8px;
+   
+  }
+
+  
+.Main-Text{
+  font-family: Bradley Cooper;
+  text-align: center;   
+  margin-left: none;
+  margin-top:10%;
+  border: #c7f1ff;
+  padding-left: 7%;
+  padding-top: 12%;
+  padding-right: 7%;
+  padding-bottom: 12%;
+  background-color: #d3fdfd;
+}
+.Head1{
+  /*border-style: ridge ;
+  border-color: #1111FF;*/
+  color:#000049;
+  border-width: 1px;
+  margin-left: 6%;
+  margin-top: 5%;
+  width: 24%;
+  font-family: Simplifica,'Times New Roman', Times, serif;
+}
+.footnote{
+  background-color: #007bff;
+  text-align: center;
+  color: white;
+  border: groove ;
+  padding: 5px;
+
+}
+.App-link {
+  color: black;
+}
+.App-link:hover{
+  color: white;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Head2{
+  color:#000049;
+  border-width: 1px;
+  margin-left: 6%;
+  margin-top: 5%;
+  font-family: Simplifica,'Times New Roman', Times, serif;
+}
+.card {
+  display:inline-block;
+  margin-left: 30px;
+}
+.CardiB{
+  
+  border-style: hidden;
+  background-color: #d3fdfd;
+  padding: 3%;
+  padding-left: 10%;
+  margin-right: 0%;
+  margin-top: 2%;
+  margin-left: 0%;
+  margin-bottom: 10px;
+  
+}
+
+.para{
+  color:#000049;
+  margin-top: 20px;
+  margin-bottom: 3%;
+  margin-left: 6%;
+  margin-right: 2px;
+  width: inherit ;
+  
+}
+
+.Img1{
+  float: right;
+  margin-right: 150px;
+  width: 15%;
+  
+}
+
+.list-group{
+  color: #007bff;
+  background-color: aqua;
+}
+.Content-List {
+  margin-left: 25px%;
+  list-style-type: none;
+  color: #771100;
+}
