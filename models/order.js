@@ -14,9 +14,31 @@ const ProductCartSchema = new mongoose.Schema({
 const OrderSchema = new mongoose.Schema({
 
     products:[ProductCartSchema],
-    trancsaction_id: {},
-    amount:{type:Number},
-    address: String,
+    trancsaction_id: {
+        
+    },
+    name:{
+        type:String,
+        required:true
+    },
+   
+    payment:{
+        type:String,
+        required:true
+    },
+    amount:{
+        type:Number,
+        required:true
+    },
+    phoneNumber:{
+        type:Number,
+        required:true,
+        trim:true
+    },
+    address: {
+        type:String,
+        required:true,
+    },
     status: {
         type: String,
         default:"",

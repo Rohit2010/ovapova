@@ -55,6 +55,7 @@ exports.updateUser = (req, res) => {
 
   exports.pushOrderInPuchaseList =(req, res, next) => {
       let purchases = []
+      console.log("In Purchase and Push============")
       req.body.Order.products.forEach(product => {
           purchases.push({
             _id: product._id,
@@ -62,8 +63,8 @@ exports.updateUser = (req, res) => {
             description:product.description,
             category: product.category,
             quantity:product.quantity,
-            amount:req.body.order.amount,
-            transaction_id: req.body.order.transaction_id
+            amount:req.body.Order.amount,
+            transaction_id: req.body.Order.transaction_id
           })
       });
 

@@ -172,17 +172,19 @@ exports.getAllUniqueCategories = (req , res) => {
 }
 //update stock
 exports.updateStock = (req, res, next) => {
-    let myOperations = req.body.order.products.map(prod => {
+    let myOperations = req.body.Order.products.map(prod => {
+        console.log("=========Update Stock==============",prod)
       return {
         updateOne: {
           filter: { _id: prod._id },
-          update: { $inc: { stock: -prod.count, sold: +prod.count } }
+          update: { $inc: { stock: -prod.quantity, sold: +prod.quantity } } //Replaced count with quantity
         }
       };
     });
   
     Product.bulkWrite(myOperations, {}, (err, products) => {
       if (err) {
+          console.log('err======================>',err)
         return res.status(400).json({
           error: "Bulk operation failed"
         });
